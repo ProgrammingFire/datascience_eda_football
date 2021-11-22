@@ -15,6 +15,7 @@ This app performs simple webscraping of NFL Football player stats data (focusing
 st.sidebar.header('User Input Features')
 selected_year = st.sidebar.selectbox('Year', list(reversed(range(1990, 2021))))
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 @st.cache
 def load_data(year):
